@@ -19,7 +19,7 @@ def save_data(d):
 class CarManagementApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Машинки")
+        self.root.title("Машинк`s")
 
         self.d = load_data()  # Загружаем данные при инициализации
 
@@ -58,7 +58,7 @@ class CarManagementApp:
 
         # Установка стилей для кнопок
         for btn in button_frame.winfo_children():
-            btn.config(width=20)  # Устанавливаем одинаковую ширину для всех кнопок
+            btn.config(width=40)  # Устанавливаем одинаковую ширину для всех кнопок
 
     def load_cars(self):
         """Загружает данные о машинах в таблицу."""
